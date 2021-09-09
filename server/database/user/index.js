@@ -19,13 +19,13 @@ UserSchema.methods.generateJwtToken = function() {
     return jwt.sign({ user: this._id.toString() }, "ZomatoAPP");
 };
 
-UserSchema.statics.findByEmailAndPhone = async({ email, phoneNumber }) => {
+UserSchema.statics.findByEmailAndPhone = async ({ email, phoneNumber }) => {
     // check whether email eist
     const checkUserByEmail = await UserModel.findOne({ email });
     const checkUserByPhone = await UserModel.findOne({ phoneNumber });
 
     if (checkUserByEmail || checkUserByPhone) {
-        throw new Error("User already exist!");
+        throw new Error("User already exist!....");
     }
     return false;
 };
