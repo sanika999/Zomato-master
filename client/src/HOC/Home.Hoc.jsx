@@ -6,16 +6,16 @@ import HomeLayout from "../Layout/Home.layout";
 
 const HomeLayoutHOC = ({ component: Component, ...rest }) => {
   return (
-  <>
-    <Route
-      {...rest}
-      component={(props) => (
-        <HomeLayout>
-          <component {...props} />
-        </HomeLayout>
-      )}
-    />
-  </>
+    <>
+      <Route
+        {...rest}
+        component={(props) => (
+          <HomeLayout>
+            <Component {...props} />
+          </HomeLayout>
+        )}
+      />
+    </>
   );
 };
 
