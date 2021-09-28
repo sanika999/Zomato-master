@@ -19,6 +19,7 @@ const DeliverySmCard = ({ image, title }) => {
   );
 };
 
+
 const DeliveryLgCard = ({ image, title }) => {
   return (
     <>
@@ -37,7 +38,6 @@ const DeliveryLgCard = ({ image, title }) => {
     </>
   );
 };
-
 
 const DeliveryCategory = (props) => {
   return (

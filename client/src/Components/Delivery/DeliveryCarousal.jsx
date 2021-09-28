@@ -43,17 +43,15 @@ const DeliveryCarousal = () => {
       title: "Sagu",
     },
   ];
-
   const settings = {
     arrows: true,
-    Infinite: true,
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   };
-  
 
   return (
     <>
@@ -66,11 +64,11 @@ const DeliveryCarousal = () => {
         ))}
       </div>
 
-      <div className="hidden lg:block ">
+      <div className="hidden lg:block">
         <Slider {...settings}>
-        {categories.map((food) => (
-          <DeliveryCategory {...food} />
-        ))}
+          {categories.map((food) => (
+            <DeliveryCategory {...food} />
+          ))}
         </Slider>
       </div>
     </>
