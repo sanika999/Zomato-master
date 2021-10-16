@@ -14,11 +14,11 @@ import { ValidateSignup , ValidateSignin } from "../../validation/auth";
 const Router = express.Router();
 
 /*
-Route    /signup
-Des      Register new user
-Params   none
-Access   Public
-Method   POST
+Route        /signup
+Descrip      Register new user
+Params       none
+Access       Public
+Method       POST
 */
 Router.post("/signup", async (req, res) => {
 

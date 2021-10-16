@@ -1,4 +1,5 @@
 import React from "react";
+
 import { AiTwotoneStar } from "react-icons/ai";
 
 const RestaurantCard = (props) => {

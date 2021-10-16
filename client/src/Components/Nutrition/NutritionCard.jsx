@@ -20,7 +20,7 @@ const NutritionCard = (props) => {
             </div>
             <ReactStars
               count={5}
-              // onChange={ratingChanged}
+              //   onChange={ratingChanged}
               size={16}
               isHalf={true}
               value={3}
@@ -56,3 +56,4 @@ const NutritionCard = (props) => {
 };
 
 export default NutritionCard;
+
